@@ -1,3 +1,4 @@
+import 'package:crypto_bear/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class Navigation {
@@ -27,10 +28,10 @@ class Navigation {
         (route) => false);
   }
 
-  // static Future navigateToHomePage({required BuildContext context}) {
-  //   return Navigator.pushAndRemoveUntil(
-  //       context,
-  //       MaterialPageRoute(builder: (BuildContext context) => const HomePage()),
-  //       (route) => false);
-  // }
+  static Future navigateToHomePage({required BuildContext context}) {
+    return Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (BuildContext context) => const HomePage()),
+        (route) => false);
+  }
 }

@@ -7,7 +7,7 @@ class AppColors {
 
 //PRIMARY COLORS
   static const Color white = Color(0xFFFEFEFE);
-  static const Color gradirntBlack = Color(0xFF302F2F);
+  static const Color gradientBlack = Color(0xFF302F2F);
   static const Color black = Color(0xFF000000);
   static const Color paselGradient = Color(0xFF404040);
 
