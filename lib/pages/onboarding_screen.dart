@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:crypto_bear/resources/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +15,16 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              // stops: [0.4, 1],
-              colors: [AppColors.paselGradient, AppColors.black])),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFF302F2F),
+            AppColors.black,
+            // Color(0xFF030303),
+          ],
+        ),
+      ),
       child: const Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
